@@ -20,4 +20,8 @@ export default class OrderItem {
   get quantity(): number {
     return this._quantity;
   }
+
+  orderItemTotal(): number {
+    return this._price * this._quantity;
+  }
 }
