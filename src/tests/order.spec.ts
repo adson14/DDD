@@ -22,8 +22,8 @@ describe("Order unit", () => {
   })
 
   it("should calculate total", () => {
-    const item1 = new OrderItem("1", "Item 1", 10, 2);
-    const item2 = new OrderItem("2", "Item 2", 5, 1);
+    const item1 = new OrderItem("1", "Item 1", 10, 2, "123456");
+    const item2 = new OrderItem("2", "Item 2", 5, 1, "789123");
     const order = new Order("123", "123", [item1, item2]);
     const total = order.total();
     expect(total).toBe(25);
