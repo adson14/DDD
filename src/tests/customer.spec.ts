@@ -41,4 +41,13 @@ describe("customer unit", () => {
     expect(customer.isActive()).toBe(false);
   })
 
+  it("should add reward points",()=>{
+    const customer = new Customer("1234", "Fulano");
+    expect(customer.rewardPoints).toBe(0);
+    customer.addPints(10);
+    expect(customer.rewardPoints).toBe(10);
+    customer.addPints(15);
+    expect(customer.rewardPoints).toBe(25);
+  })
+
 });
