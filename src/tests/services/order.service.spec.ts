@@ -1,3 +1,4 @@
+import Customer from "../../entity/customer"
 import Order from "../../entity/order"
 import OrderItem from "../../entity/order_item"
 import OrderService from "../../service/order.service"
@@ -13,5 +14,18 @@ describe("OrderService unit",()=>{
     const total = OrderService.total([order1, order2])
     expect(total).toBe(30)
 
+  })
+
+
+  it("should place an order", () =>{
+    const customer = new Customer("1", "John")
+    const item1 = new OrderItem("1", "Item 1", 10, 1, "123456")
+    const item2 = new OrderItem("2", "Item 2", 10, 1, "123456")
+
+    
+    const order = new OrderService().placeOrder(customer, [item1,item2])
+
+    expect(customer.rewardPoints).toBe(2)
+    expect(order.total()).toBe(20)
   })
 })

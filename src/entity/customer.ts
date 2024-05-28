@@ -5,10 +5,11 @@ import Address from "./address";
 //Uma entidade sempre deve se autovalidar
 
 export default class Customer {
-  _id: string;
-  _name: string;
-  _address!: Address;
-  _active: boolean = false;
+  private _id: string;
+  private _name: string;
+  private _address!: Address;
+  private _active: boolean = false;
+  private _rewardPoints: number = 0;
 
   constructor(id: string, name: string) {
     this._id = id;
@@ -18,6 +19,14 @@ export default class Customer {
 
   get name(): string {
     return this._name;
+  }
+
+  get rewardPoints(): number {
+    return this._rewardPoints;
+  }
+
+  get id(): string {
+    return this._id;
   }
 
   validate() {
@@ -54,5 +63,9 @@ export default class Customer {
 
   addAddress(adress: Address){
     this._address = adress;
+  }
+
+  addPints(points: number) {
+    this._rewardPoints += points;
   }
 }
