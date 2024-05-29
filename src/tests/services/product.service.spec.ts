@@ -1,4 +1,4 @@
-import Product from "../../entity/product"
+import Product from "../../domain/entity/product"
 import ProductService from "../../service/product.service"
 
 describe("ProductService unit",()=>{
