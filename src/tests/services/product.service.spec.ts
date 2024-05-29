@@ -1,5 +1,5 @@
 import Product from "../../domain/entity/product"
-import ProductService from "../../service/product.service"
+import ProductService from "../../domain/service/product.service"
 
 describe("ProductService unit",()=>{
   it("Shound change price of all products",()=>{
