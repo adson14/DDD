@@ -16,6 +16,18 @@ export default class OrderItem {
     this.validate();
   }
 
+  get productId(): string {
+    return this._productId;
+  }
+
+  get name(): string {
+    return this._name;
+  }
+
+  get id(): string {
+    return this._id;
+  }
+
   get price(): number {
     return this._price;
   }
