@@ -5,9 +5,9 @@ export default interface EventDispatcherInterface {
 
   notify(event: EventInterface): void
 
-  register(eventName: string, eventHandler: EventHandlerInterface<EventInterface>): void
+  register(eventName: string, eventHandler: EventHandlerInterface): void
 
-  unregister(eventName: string, eventHandler: EventHandlerInterface<EventInterface>): void
+  unregister(eventName: string, eventHandler: EventHandlerInterface): void
 
   unregisterAll(): void
 }
