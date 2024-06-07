@@ -1,3 +1,3 @@
-import CustomerModelSequelize from "../db/sequelize/model/customer.model";
+import CustomerModelSequelize from "../customer/repository/sequelize/customer.model";
 
 export default class CustomerModel extends CustomerModelSequelize{}
