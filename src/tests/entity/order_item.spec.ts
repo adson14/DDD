@@ -1,4 +1,4 @@
-import OrderItem from "../domain/entity/order_item"
+import OrderItem from "../../domain/checkout/entity/order_item"
 
 describe('OrderItem unit',() =>{
   it("should  throw error when id is empty",() => {

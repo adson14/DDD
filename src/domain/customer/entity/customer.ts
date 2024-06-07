@@ -1,6 +1,6 @@
 //Entidade anêmica
 
-import Address from "./address";
+import Address from "../value-object/address";
 
 //Uma entidade sempre deve se autovalidar
 

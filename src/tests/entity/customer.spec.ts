@@ -1,5 +1,5 @@
-import Address from "../domain/entity/address";
-import Customer from "../domain/entity/customer";
+import Address from "../../domain/customer/value-object/address";
+import Customer from "../../domain/customer/entity/customer";
 
 describe("customer unit", () => {
   it("should throw error id is empty", () => {

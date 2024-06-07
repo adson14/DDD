@@ -3,13 +3,13 @@ import CustomerModel from "../models/customer.models";
 import OrderItemModel from "../models/order-item.model";
 import ProductModel from "../models/product.model";
 import CustomerRepository from "./customer.repository";
-import Customer from "../../domain/entity/customer";
-import Address from "../../domain/entity/address";
+import Customer from "../../domain/customer/entity/customer";
+import Address from "../../domain/customer/value-object/address";
 import ProductRepository from "./product.repository";
-import Product from "../../domain/entity/product";
-import OrderItem from "../../domain/entity/order_item";
+import Product from "../../domain/product/entity/product";
+import OrderItem from "../../domain/checkout/entity/order_item";
 import OrderRepository from "./order.repository";
-import Order from "../../domain/entity/order";
+import Order from "../../domain/checkout/entity/order";
 import OrderModel from "../models/order.model";
 
 describe("OrderRepository unit", () => {
